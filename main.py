@@ -13,6 +13,8 @@ def Input_to_index(input:str):
         print('잘못입력하셨습니다.')
         Input_to_index()
 
+
+
 def play_game():
     car_door = random.randint(0,2)
     
@@ -44,7 +46,7 @@ def play_game():
     else:
         print('error')
 
-print(play_game())
+
 
 # main
 
@@ -87,6 +89,14 @@ def game_intro():
     print("처음 고르신 문에서 다른 문으로 변경하실 기회를 드리겠습니다. 다른 문으로 선택을 변경하시겠습니까?")
 
 
+
+wonCount = 0
 game_intro()
+gameCount = int(input("게임 몇번 할래? :"))
+for i in range(gameCount):
+    isWon = play_game()
+
+    if isWon == 1:
+        wonCount +=1 
 
 
