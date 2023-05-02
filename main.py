@@ -1,5 +1,4 @@
-# main
-
+# main.py
 import random
 
 def Input_to_index(input:str):
@@ -15,18 +14,18 @@ def Input_to_index(input:str):
 
 def play_game():
     car_door = random.randint(0,2)
-    print(car_door)
+    
     participant_choice = input("문을 선택하세요 (왼쪽, 가운데, 오른쪽 중에서 선택): ")
     
     select_door_index = Input_to_index(participant_choice)
-    print(select_door_index)
+    
     
     door_index = [0,1,2]
 
     new_choice = -1
     # print(door_index)
     change_choice = input(f'문을 바꾸시겠습니까? y/n')
-    print(change_choice)
+    
     if change_choice == 'y':
          # 선택한 문 이외의 문 선택
          rand_choice =  random.randrange(0, 2)
