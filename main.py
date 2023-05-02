@@ -25,3 +25,13 @@ def monte_carlo_simulation(change_choice, num_trials):
     win_rate = num_wins / num_trials
     return win_rate
 
+
+
+
+# 선택을 유지한 경우의 승률 계산
+win_rate = monte_carlo_simulation(change_choice=False, num_trials=1000)
+print(f"선택을 유지한 경우의 승률: {win_rate}")
+
+# 선택을 변경한 경우의 승률 계산
+win_rate = monte_carlo_simulation(change_choice=True, num_trials=5000)
+print(f"선택을 변경한 경우의 승률: {win_rate}")
