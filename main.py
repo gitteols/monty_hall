@@ -1,4 +1,5 @@
 # main
+
 import random
 
 def monte_carlo_simulation(change_choice, num_trials):
@@ -24,4 +25,19 @@ def monte_carlo_simulation(change_choice, num_trials):
     
     win_rate = num_wins / num_trials
     return win_rate
+
+
+
+def game_intro():
+    print("안녕하세요 플레이어님! 몬티홀 문제(Monty Hall problem) 게임에 참가해 주셔서 감사드립니다.")
+    print("여기 세 개의 문이 있습니다. 하나의 문 뒤에는 자동차가, 나머지 두 개의 문 뒤에는 염소가 있습니다.")
+    print("플레이어님은 지금부터 다음 세 개의 문 중 마음에 드는 문 하나를 선택합니다.")
+    print("마음에 드는 문을 고르셨나요?")
+    print("그럼 제가 플레이어님이 선택하지 않은 두 문중 하나의 문을 열겠습니다.")
+    print("이 문 뒤에 있는 것은 염소였습니다!")
+    print("자 이제 자동차는 플레이어님이 고르신 문과, 선택하지 않은 문. 두 곳중 한곳에 있습니다.")
+    print("처음 고르신 문에서 다른 문으로 변경하실 기회를 드리겠습니다. 다른 문으로 선택을 변경하시겠습니까?")
+
+
+game_intro()
 
