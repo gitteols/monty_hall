@@ -14,44 +14,6 @@ def Input_to_index(input:str):
         Input_to_index()
 
 
-
-# def play_game():
-#     car_door = random.randint(0,2)
-    
-#     participant_choice = input("문을 선택하세요 (왼쪽, 가운데, 오른쪽 중에서 선택): ")
-    
-#     select_door_index = Input_to_index(participant_choice)
-    
-#     door_index = [0,1,2]
-#     new_doors = door_index
-#     new_doors.remove(car_door)
-#     new_doors.remove(select_door_index)
-#     door_index.remove(new_doors[0])
-
-#     new_choice = -1
-#     # print(door_index)
-#     change_choice = input(f'문을 바꾸시겠습니까? y/n')
-    
-#     if change_choice == 'y':
-#          # 선택한 문 이외의 문 선택
-#          door_index.remove(select_door_index)
-#          new_choice = door_index[0]
-#          if new_choice == car_door:
-#              print('문 뒤에 있는 것은 차 였습니다!')
-#              return 1
-#          else:
-#              print('문 뒤에 있는 것은 염소 였습니다!')
-#              return 0
-#     elif change_choice == 'n':
-#         if select_door_index == car_door:
-#             print('문 뒤에 있는 것은 차 였습니다!')
-#             return 1
-#         else:
-#             print('문 뒤에 있는 것은 염소 였습니다!')
-#             return 0
-#     else:
-#         print('error')
-
 def test_game(participant_choice:str, y_n:str):
     car_door = random.randint(0,2)
     select_door_index = Input_to_index(participant_choice)
